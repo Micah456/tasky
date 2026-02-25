@@ -78,12 +78,38 @@
                 </div>
             </div>
             <div class="row">
-                <button>Create a New Task</button>
+                <button id="new-task-btn">Create a New Task</button>
                 <button>Create a New Category</button>
             </div>
         </main>
         <footer>
             <p>Copyright © 2025 Micah's Tools</p>  
         </footer>
+        <dialog id="new-task-dialog">
+            <h1>Create a New Task</h1>
+            <form id="new-task-form">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <label for="task-name-input">Name<span style="color: red;">*</span> :</label>
+                    <input id="task-name-input" type="text" required/>
+                </div>
+                <div class="col">
+                    <label for="task-description-ta">Description:</label>
+                    <textarea id="task-description-ta"></textarea>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <label for="deadline-input">Deadline:</label>
+                    <input type="checkbox" id="deadline-checkbox"/>
+                    <input type="date" id="deadline-input" disabled required/>
+                </div>
+                <div>
+                    <p style="color: red">*Required</p>
+                </div>
+                <div class="row" style="margin-bottom: 0;">
+                    <button id="cancel-new-task-btn">Cancel</button>
+                    <input id="submit-new-task-btn" type="submit"/>
+                </div>
+            </form>
+        </dialog>
+        <script type="module" src="../static/index.js"></script>
     </body>
 </html>
