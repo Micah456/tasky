@@ -11,30 +11,29 @@
         </header>
         <main>
             <div>
-                <div class="col">
-                    <h2>Today's Events</h2>
-                    <p><a href="#">Open Calendar</a></p>
-                    <table>
-                        <tr>
-                            <th>Event</th>
-                            <th>Time</th>
-                            <th>Actions</th>
-                        </tr>
-                        <tr>
-                            <td>Cleaning</td>
-                            <td>9am - 11 am</td>
-                            <td class="row"><button class="width100">Open</button></td>
-                        </tr>
-                        <tr>
-                            <td>Dinner</td>
-                            <td>6pm - 7pm</td>
-                            <td class="row"><button class="width100">Open</button></td>
-                        </tr>
-                    </table>
-                    
-                </div>
-                <div>
-                    <h2>Tasks due this week</h2>
+                <h2>Today's Events</h2>
+                <p><a href="#">Open Calendar</a></p>
+                <table>
+                    <tr>
+                        <th>Event</th>
+                        <th>Time</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>Cleaning</td>
+                        <td>9am - 11 am</td>
+                        <td class="row"><button class="width100">Open</button></td>
+                    </tr>
+                    <tr>
+                        <td>Dinner</td>
+                        <td>6pm - 7pm</td>
+                        <td class="row"><button class="width100">Open</button></td>
+                    </tr>
+                </table>  
+            </div>
+            <div>
+                <h2>Tasks due this week</h2>
+                <div id="due-tasks-div">
                     <table>
                         <tr>
                             <th>Task</th>
@@ -52,16 +51,16 @@
                             <td class="row"><button>Open</button><button>Complete</button></td>
                         </tr>
                     </table>
-                </div>
+                </div>    
             </div>
             <div>
                 <h2>Categories</h2>
                 <div class="scroll">
                     <table>
-                        <tr>
+                        <tr class="sticky-header">
                             <th>Category</th>
                             <th>No. of Tasks</th>
-                            <th class="row">Actions</th>
+                            <th>Actions</th>
                         </tr>
                         <tr>
                             <td >Homework</td>
