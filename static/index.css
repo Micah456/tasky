@@ -134,7 +134,11 @@ dialog > form {
 }
 
 .overdue{
-    color: red
+    color: red;
+}
+
+.no-deadline{
+    color: grey;
 }
 
 th{
