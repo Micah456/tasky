@@ -115,3 +115,8 @@ dialog > form {
     background-color: white;
     padding: 1rem;
 }
+
+.scroll{
+    overflow-y: scroll;
+    height: 10rem;
+}
