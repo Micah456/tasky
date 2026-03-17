@@ -133,7 +133,7 @@ dialog > form {
     top: 0;
 }
 
-.overdue{
+.overdue, .required{
     color: red;
 }
 
@@ -143,4 +143,183 @@ dialog > form {
 
 th{
     padding: .3rem;
+}
+
+legend{
+    display: flex;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-checkbox{
+    background-color: #a68dea;
+    color: white;
+    padding: 3px;
+    margin: 0 3px;
+    border-radius: 3px;
+    width: 3rem;
+    text-align: center;
+}
+
+.btn-checkbox:hover{
+    background-color: #4cabef;
+    cursor: pointer;
+}
+
+.btn-checked{
+    background-color: #443179;
+    color: white;
+}
+
+.btn-disabled, .btn-disabled:hover{
+    background-color: gray;
+    cursor: default;
+}
+
+.btn-checkbox > input{
+    position: absolute;
+    top:-100vh;
+    left:-100vw;
+}
+
+.checkbox-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem 0;
+}
+
+.today-div{
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.calendar{
+    table-layout: fixed;
+    min-width: 1000px;
+}
+
+.cal-day > div{
+    border: #a68dea solid;
+    padding: .5rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cal-day > div:hover{
+    background-color: #8dc3ea;
+}
+
+.cal-day-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 3.43em;
+    overflow-y: hidden;
+}
+
+.no-events-p{
+    margin: 0;
+    height: 3.43em;
+}
+
+.cal-day-date{
+    margin: 0;
+}
+
+.cal-deadline-p{
+    margin: 0;
+}
+
+.cal-day-today > div{
+    border: rgb(255, 0, 157) solid;
+}
+
+aside{
+    background-color: white;
+    border-right: #443179 solid;
+    position: fixed;
+    width: 60vw;
+    height: 98vh;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+aside > h1{
+    background-color: #a68dea;
+    padding: 2rem;
+    margin: 0;
+}
+
+.day-view-div{
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0;
+    height: 76%;
+}
+
+
+
+.event-div{
+    border: #443179 solid ;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 1rem;
+}
+
+
+
+.event-div > p, .calendar-task-div > p{
+    margin: 0;
+}
+
+.event-sub-div{
+    text-align: left;
+}
+
+.event-sub-div > h3, .event-sub-div > time, .event-sub-div > p{
+    margin: 0;
+    display: inline;
+}
+
+.event-sub-div > time{
+    font-size: 1.15rem;
+}
+
+.event-div:hover{
+    background-color: #8dc3ea;
+}
+
+.event-div:active{
+    background-color: #4cabef;
+}
+
+.actions-td{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.actions-td > button{
+    width: 48%;
+    
+}
+
+.cal-task-name{
+    overflow-x:hidden;
+    white-space: nowrap;
 }

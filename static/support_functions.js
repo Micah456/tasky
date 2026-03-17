@@ -1,5 +1,6 @@
 const day = 1000 * 60 * 60 * 24
 const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 const appDataKey = "Tasky_Key"
 const defaultData = {
@@ -191,4 +192,34 @@ function getFirstDayOfWeek(){
 
 function formatShortDate(date){
     return `${String(date.getDate()).padStart(2,"0")}/${String(date.getMonth() + 1).padStart(2,"0")}/${date.getFullYear()}`
+}
+
+/**
+ * Return suffix corresponding to given day of the month
+ * @param {Number} dayOfMonth 
+ * @returns {String}
+ */
+function getDateSuffix(dayOfMonth){
+    switch(dayOfMonth){
+        case 1:
+            return "st"
+        case 2:
+            return "nd"
+        case 3:
+            return "rd"
+        case 21:
+            return "st"
+        case 22:
+            return "nd"
+        case 23:
+            return "rd"
+        case 31:
+            return "st"
+        default:
+            return "th"
+    }
+}
+
+export function formatLongDate(date){
+    return `${dayNames[date.getDay()]}, ${date.getDate()}${getDateSuffix(date.getDate())} ${monthNames[date.getMonth()]} ${date.getFullYear()}`
 }

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Tasky</title>
+        <link rel="stylesheet" href="../static/index.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Tasky</h1>
+        </header>
+        <main>
+            <h2>Calendar</h2>
+            <div class="today-div">
+                <p>Today's Date: <date id="today-date">date</date></p>
+            </div>
+            <table class="calendar">
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wedbesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+                <tr class="cal-row">
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">1</p>
+                            <ul class="cal-day-ul">
+                                <li>Event 1</li>
+                                <li>Event 2</li>
+                                <li>Event 3</li>
+                            </ul>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>
+                    </td>
+                    <td class="cal-day cal-day-today">
+                        <div>
+                            <p class="cal-day-date">2</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>  
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">3</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>  
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">4</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>  
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                          <p class="cal-day-date">5</p>
+                            <ul class="cal-day-ul">
+                                <li>Event 1</li>
+                                <li>Event 2</li>
+                                <li>Event 3</li>
+                            </ul>  
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">6</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>  
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">7</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>  
+                    </td>
+                </tr>
+                <tr class="cal-row">
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">8</p>
+                            <ul class="cal-day-ul">
+                                <li>Event 1</li>
+                                <li>Event 2</li>
+                                <li>Event 3</li>
+                            </ul>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">9</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>  
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">10</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>  
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">11</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>  
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">12</p>
+                            <ul class="cal-day-ul">
+                                <li>Event 1</li>
+                                <li>Event 2</li>
+                                <li>Event 3</li>
+                            </ul>
+                            <p class="cal-deadline-p">7 Deadlines</p>
+                        </div>
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">13</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">1 Deadline</p>
+                        </div>  
+                    </td>
+                    <td class="cal-day">
+                        <div>
+                            <p class="cal-day-date">14</p>
+                            <p class="no-events-p">No events</p>
+                            <p class="cal-deadline-p">No Deadlines</p>
+                        </div>  
+                    </td>
+                </tr>
+            </table>
+            <div class="row">
+                <button id="open-day-details">Show Day Details</button>
+                <button id="new-event-btn">Create a New Event</button>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright © 2025 Micah's Tools</p>  
+        </footer>
+        <aside id="day-view-aside">
+            <h1 style="color: white;">Friday, 6th March 2026</h1>
+            <div class="scroll day-view-div">
+                <h2 style="color: black; text-align: center;">Events </h2>
+                <div class="event-div">
+                    <div class="event-sub-div">
+                        <h3>Event 1</h3>
+                        <time>10:00</time>
+                    </div>
+                    <div class="row event-sub-div">
+                        <p>No location</p>
+                        <div>
+                            <button>Open</button>
+                            <button>Edit</button>
+                        </div>   
+                    </div>
+                </div>
+                <div class="event-div">
+                    <div class="event-sub-div">
+                        <h3>Event 2</h3>
+                        <time>13:00</time>
+                    </div>
+                    <div class="row event-sub-div">
+                        <p>No location</p>
+                        <div>
+                            <button>Open</button>
+                            <button>Edit</button>
+                        </div>   
+                    </div>
+                </div>
+                <div class="event-div">
+                    <div class="event-sub-div">
+                        <h3>Event 3</h3>
+                        <time>18:00</time>
+                    </div>
+                    <div class="row event-sub-div">
+                        <p>No location</p>
+                        <div>
+                            <button>Open</button>
+                            <button>Edit</button>
+                        </div>   
+                    </div>
+                </div>
+                <h2 style="color: black; text-align: center;">Tasks Due</h2>
+                <table style="width: 100%; color: black; table-layout: fixed;">
+                    <tr>
+                        <th>Task</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td class="cal-task-name" title="Go to the bank">Go to the bank</td>
+                        <td class="actions-td">
+                            <button>Open</button>
+                            <button>Complete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="cal-task-name" title="Sort out the cardboard box">Sort out the cardboard box</td>
+                        <td class="actions-td">
+                            <button>Open</button>
+                            <button>Complete</button>
+                        </td>
+                    </tr>
+                </table>      
+            </div>
+        </dialog>
+        <dialog id="new-task-dialog">
+            <h1>Create a New Event</h1>
+            <form id="new-event-form" class="scroll" style="min-height: 40vh;">
+                    <div style="display: flex; justify-content: space-between;">
+                        <label for="task-name-input">Name<span class="required">*</span> :</label>
+                        <input id="task-name-input" type="text" required/>
+                    </div>
+                    <div class="col">
+                        <label for="task-description-ta">Description:</label>
+                        <textarea id="task-description-ta"></textarea>
+                    </div>
+                    
+                <div>
+                    <label for="start-date-input">Start Date<span class="required">*</span> :</label>
+                    <input id="start-date-input" type="datetime-local"/>
+                </div>
+                <div>
+                    <label for="end-date-input">End Date<span class="required">*</span> :</label>
+                    <input id="end-date-input" type="datetime-local"/>
+                </div>
+                <fieldset id="recurring-event-fieldset">
+                    <legend>Recurring Event <input id="recurring-event-checkbox" type="checkbox"/></legend>
+                    <div class="checkbox-row">
+                        <label class="btn-checkbox">Mon
+                            <input name="days-of-week" type="checkbox" value="1">
+                        </label>
+                        <label class="btn-checkbox">Tue
+                            <input name="days-of-week" type="checkbox" value="2">
+                        </label>
+                        <label class="btn-checkbox">Wed
+                            <input name="days-of-week" type="checkbox" value="3">
+                        </label>
+                        <label class="btn-checkbox">Thur
+                            <input name="days-of-week" type="checkbox" value="4">
+                        </label>
+                    </div>
+                    <div class="checkbox-row">
+                        <label class="btn-checkbox">Fri
+                            <input name="days-of-week" type="checkbox" value="5">
+                        </label>
+                        <label class="btn-checkbox">Sat
+                            <input name="days-of-week" type="checkbox" value="6">
+                        </label>
+                        <label class="btn-checkbox">Sun
+                            <input name="days-of-week" type="checkbox" value="0">
+                        </label>
+                    </div>
+                </fieldset>
+                
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+
+
+                </div>
+                <div>
+                    <p class="required">*Required</p>
+                </div>
+                <div class="row" style="margin-bottom: 0;">
+                    <button id="cancel-new-task-btn">Cancel</button>
+                    <input id="submit-new-task-btn" type="submit"/>
+                </div>
+                
+            </form>
+            
+        </dialog>
+        <script type="module" src="../static/calendar.js"></script>
+    </body>
+</html>
